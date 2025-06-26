@@ -13,12 +13,7 @@ type ServiceCardProps = {
   imageUrl?: string | StaticImageData;
 };
 
-const ServiceCard = ({
-  id,
-  title,
-  description,
-  imageUrl,
-}: ServiceCardProps) => {
+const ServiceCard = ({ title, description, imageUrl }: ServiceCardProps) => {
   return (
     <div className='overflow-hidden rounded-xl border-primary-50 border-2 shadow-md bg-white flex flex-col'>
       <div className='relative h-48 w-full'>

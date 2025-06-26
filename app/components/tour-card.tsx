@@ -7,6 +7,7 @@ import ExampleTour from '@/assets/images/exampletour.jpeg';
 
 type TourCardProps = {
   id?: number;
+  slug: string;
   title?: string;
   description?: string;
   imageUrl?: string | StaticImageData;
@@ -15,7 +16,7 @@ type TourCardProps = {
 };
 
 const TourCard = ({
-  id,
+  slug,
   title,
   description,
   imageUrl,
@@ -57,7 +58,7 @@ const TourCard = ({
         </div>
 
         <div className='mt-auto pt-2 cursor-pointer'>
-          <Link href={`/tours/${id}`}>
+          <Link href={`/tours/${slug}`}>
             <Button className='w-full bg-primary-500 hover:bg-primary-600 text-white'>
               See More
             </Button>

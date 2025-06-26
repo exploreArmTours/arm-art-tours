@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 export type NavigationItem = {
   name: string;
   href?: string;
@@ -10,3 +12,13 @@ export type DropdownItemType = {
   Icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   className?: string;
 };
+
+export interface TourData {
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  imageUrl: string | StaticImageData;
+  time: string;
+  price: string;
+}

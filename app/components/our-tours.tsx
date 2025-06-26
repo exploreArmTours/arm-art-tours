@@ -1,6 +1,6 @@
 'use client';
 import { Text, TextStyle } from '@/elements/typography/text';
-import TourCard from '../components/tour-card'; // adjust the path based on your file structure
+import TourCard from '../components/tour-card';
 import { mockTours } from '@/constants/data';
 
 const OurTours = () => {
