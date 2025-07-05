@@ -1,11 +1,7 @@
 import OurTours from '../components/our-tours';
 
 const OurToursPage = () => {
-  return (
-    <div>
-      <OurTours />
-    </div>
-  );
+  return <OurTours />;
 };
 
 export default OurToursPage;

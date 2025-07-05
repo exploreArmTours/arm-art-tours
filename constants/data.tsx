@@ -4,7 +4,7 @@ import ExampleTour from '@/assets/images/exampletour.jpeg';
 export const NAVIGATION: NavigationItem[] = [
   { name: 'About us', href: '/about', current: false },
   { name: 'Tours', href: '/our-tours', current: false },
-  { name: 'Blogs', href: '/blogs', current: false },
+  { name: 'Blogs', href: '/our-blogs', current: false },
 ];
 
 export const mockTours = [
@@ -130,5 +130,24 @@ export const faqs = [
     question: 'What is included in the tour package?',
     answer:
       'Most tours include transportation, accommodations, guided services, and entry fees to major attractions.',
+  },
+];
+
+export const mockBlogs = [
+  {
+    id: 111,
+    slug: 'sevan-lake-sevanavank',
+    title: 'Sevan Lake & Sevanavank',
+    description:
+      'Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 211,
+    slug: 'garni-temple-geghard-monastery',
+    title: 'Garni Temple & Geghard Monastery',
+    description:
+      'Visit the only pagan temple in the region and a unique rock-carved monastery complex.',
+    imageUrl: ExampleTour,
   },
 ];

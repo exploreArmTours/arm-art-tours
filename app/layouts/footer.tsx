@@ -17,13 +17,8 @@ import ExampleTour from '@/assets/images/exampletour.jpeg';
 const navigation = {
   services: [
     { name: 'About Us', href: '/about' },
-    { name: 'Tours', href: '/' },
-    { name: 'Blogs', href: '/' },
-  ],
-  legal: [
-    { name: 'Terms of service', href: '#' },
-    { name: 'Privacy policy', href: '#' },
-    { name: 'License', href: '#' },
+    { name: 'Tours', href: '/our-tours' },
+    { name: 'Blogs', href: '/our-blogs' },
   ],
   contact: [
     {
@@ -49,8 +44,8 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className='bg-primary-500 md:px-10 lg:px-24 2xl:px-48 3xl:px-96'>
-      <div className='mx-auto max-w-7xl px-2 py-16 sm:py-10 lg:px-8 lg:py-24'>
+    <footer className='bg-primary-500 md:px-10 lg:px-24'>
+      <div className='mx-auto max-w-7xl px-2 py-16 sm:py-10 lg:px-8'>
         <div className='ml-6 grid-cols-3 xl:grid xl:gap-8'>
           <Image
             src={ExampleTour}
@@ -59,41 +54,7 @@ const Footer = () => {
             height={64}
             className='mb-4 h-full max-h-16 w-full max-w-16 hover:cursor-pointer'
           />
-          <div className='grid grid-cols-2 gap-8 md:grid-cols-3 xl:col-span-2 xl:mt-0 text-white'>
-            <div className='md:grid md:grid-cols-1 md:gap-8'>
-              <div className='mt-10 md:mt-0'>
-                <Text style={TextStyle.BodyXlSemiBold} value='Services' />
-                <ul role='list' className='mt-6 space-y-4'>
-                  {navigation.services.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href}>
-                        <Text
-                          style={TextStyle.BodyBaseNormal}
-                          value={item.name}
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className='md:grid md:grid-cols-1 md:gap-8'>
-              <div className='mt-10 md:mt-0'>
-                <Text style={TextStyle.BodyXlSemiBold} value='Legal' />
-                <ul role='list' className='mt-6 space-y-4'>
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href}>
-                        <Text
-                          style={TextStyle.BodyBaseNormal}
-                          value={item.name}
-                        />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          <div className='grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 text-white'>
             <div className='md:grid md:grid-cols-1 md:gap-8'>
               <div className='mt-10 md:mt-0'>
                 <Text style={TextStyle.BodyXlSemiBold} value='Contacts' />
@@ -127,6 +88,22 @@ const Footer = () => {
                     <ViberSVG />
                   </Link>
                 </div>
+              </div>
+            </div>
+            <div className='md:grid md:grid-cols-1 md:gap-8'>
+              <div className='mt-10 md:mt-0'>
+                <ul role='list' className='mt-6 space-y-4'>
+                  {navigation.services.map((item) => (
+                    <li key={item.name}>
+                      <Link href={item.href}>
+                        <Text
+                          style={TextStyle.BodyBaseNormal}
+                          value={item.name}
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
