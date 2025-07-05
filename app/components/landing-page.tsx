@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 import SuggestedTours from './suggested-tours';
 import WhyChooseUs from './why-choose-us';
+import FaqSection from './faq-section';
 
 const LandingPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -60,6 +61,9 @@ const LandingPage = () => {
       </div>
       <div className='my-16'>
         <WhyChooseUs />
+      </div>
+      <div className='my-16'>
+        <FaqSection />
       </div>
     </div>
   );

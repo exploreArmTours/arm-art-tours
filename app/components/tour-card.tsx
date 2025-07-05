@@ -58,7 +58,7 @@ const TourCard = ({
         </div>
 
         <div className='mt-auto pt-2 cursor-pointer'>
-          <Link href={`/tours/${slug}`}>
+          <Link href={`/our-tours/${slug}`}>
             <Button className='w-full bg-primary-500 hover:bg-primary-600 text-white'>
               See More
             </Button>

@@ -19,11 +19,7 @@ const SingleTourPage = () => {
       />
     );
   }
-  return (
-    <div>
-      <SingleTour tourData={tourData as TourData} />
-    </div>
-  );
+  return <SingleTour tourData={tourData as TourData} />;
 };
 
 export default SingleTourPage;
