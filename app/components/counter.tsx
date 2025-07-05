@@ -60,7 +60,7 @@ const Counter = ({ price }: { price: string }) => {
         </div>
 
         <div className='text-center text-lg font-semibold text-primary-700'>
-          Total: ${totalPrice}
+          Total: {totalPrice}
         </div>
       </div>
       <Text

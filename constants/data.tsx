@@ -109,3 +109,26 @@ export const mockTours = [
     price: '120000',
   },
 ];
+
+export const faqs = [
+  {
+    question: 'What is the best time to visit Armenia?',
+    answer:
+      'Spring and Autumn are the best seasons due to pleasant weather and beautiful natural scenery.',
+  },
+  {
+    question: 'Are the tours guided?',
+    answer:
+      'Yes, all our tours include experienced local guides who speak multiple languages.',
+  },
+  {
+    question: 'Can I customize my tour itinerary?',
+    answer:
+      'Absolutely! We offer fully customizable tour packages to suit your interests and schedule.',
+  },
+  {
+    question: 'What is included in the tour package?',
+    answer:
+      'Most tours include transportation, accommodations, guided services, and entry fees to major attractions.',
+  },
+];
