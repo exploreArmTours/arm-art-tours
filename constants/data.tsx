@@ -135,7 +135,7 @@ export const faqs = [
 
 export const mockBlogs = [
   {
-    id: 111,
+    id: 1,
     slug: 'sevan-lake-sevanavank',
     title: 'Sevan Lake & Sevanavank',
     description:
@@ -143,11 +143,59 @@ export const mockBlogs = [
     imageUrl: ExampleTour,
   },
   {
-    id: 211,
+    id: 2,
     slug: 'garni-temple-geghard-monastery',
     title: 'Garni Temple & Geghard Monastery',
     description:
       'Visit the only pagan temple in the region and a unique rock-carved monastery complex.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 3,
+    slug: 'tatev-monastery-ropeway',
+    title: 'Tatev Monastery & Ropeway',
+    description:
+      'Experience the world’s longest reversible cable car and the breathtaking views of the Vorotan Gorge.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 4,
+    slug: 'dilijan-hiking-retreat',
+    title: 'Dilijan Hiking & Nature Retreat',
+    description:
+      'Explore the lush forests of Dilijan National Park and enjoy Armenia’s serene natural beauty.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 5,
+    slug: 'amberd-fortress',
+    title: 'Amberd Fortress & Mount Aragats',
+    description:
+      'Visit the medieval fortress located on the slopes of Mount Aragats with stunning alpine views.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 6,
+    slug: 'noravank-red-cliffs',
+    title: 'Noravank Monastery & Red Cliffs',
+    description:
+      'Marvel at the cliffside Noravank Monastery surrounded by dramatic red rock formations.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 7,
+    slug: 'khor-virap-aranats',
+    title: 'Khor Virap & Mount Ararat View',
+    description:
+      'Get a picture-perfect view of Mount Ararat and learn about the ancient Armenian Christian roots.',
+    imageUrl: ExampleTour,
+  },
+  {
+    id: 8,
+    slug: 'gyumri-architecture-culture',
+    title: 'Gyumri City & Cultural Heritage',
+    description:
+      'Discover Armenia’s second-largest city known for its 19th-century architecture and lively atmosphere.',
     imageUrl: ExampleTour,
   },
 ];
