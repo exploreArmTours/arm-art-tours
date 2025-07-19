@@ -54,15 +54,19 @@ const LandingPage = () => {
         })}
       </div>
       <div className='relative -mt-[230px] z-10 px-6 md:px-24 lg:px-48'>
+        {/* - */}
         <SuggestedServices />
       </div>
       <div className='mt-24'>
+        {/* - */}
         <SuggestedTours />
       </div>
       <div className='my-16'>
+        {/* - */}
         <WhyChooseUs />
       </div>
       <div className='my-16'>
+        {/* - */}
         <FaqSection />
       </div>
     </div>
@@ -70,3 +74,75 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+// ('use client');
+// import Image from 'next/image';
+// import { useEffect, useState } from 'react';
+// import { twMerge } from 'tailwind-merge';
+// import SuggestedServices from './suggested-services';
+// import SuggestedTours from './suggested-tours';
+// import WhyChooseUs from './why-choose-us';
+// import FaqSection from './faq-section';
+// import { Text, TextStyle } from '@/elements/typography/text';
+// import { useLandingSlides } from '@/hooks/useLandingSlides';
+// import { useTranslation } from 'react-i18next';
+
+// const LandingPage = () => {
+//   const [activeIndex, setActiveIndex] = useState(0);
+//   const { data: slides = [], isLoading } = useLandingSlides();
+//   const { i18n } = useTranslation();
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setActiveIndex((prev) => (prev + 1) % slides.length);
+//     }, 3000);
+//     return () => clearInterval(interval);
+//   }, [slides.length]);
+
+//   if (isLoading) return <div>Loading...</div>;
+
+//   return (
+//     <div className='min-h-screen relative'>
+//       <div className='relative h-[70vh] w-full overflow-hidden'>
+//         {slides.map((slide, index) => (
+//           <div
+//             key={slide.id}
+//             className={twMerge(
+//               'absolute inset-0 transition-opacity duration-[2000ms] ease-in-out',
+//               index === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+//             )}
+//           >
+//             <Image
+//               src={slide.imageUrl}
+//               alt='Landing Image'
+//               fill
+//               className='object-cover'
+//             />
+//             <div className='absolute z-10 top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black/20'>
+//               <Text
+//                 style={TextStyle.Header1}
+//                 className='text-center mb-40 text-4xl font-bold text-primary-50 uppercase'
+//                 value={slide.translations[i18n.language]?.text || ''}
+//               />
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+
+//       <div className='relative -mt-[230px] z-10 px-6 md:px-24 lg:px-48'>
+//         <SuggestedServices />
+//       </div>
+//       <div className='mt-24'>
+//         <SuggestedTours />
+//       </div>
+//       <div className='my-16'>
+//         <WhyChooseUs />
+//       </div>
+//       <div className='my-16'>
+//         <FaqSection />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default LandingPage;

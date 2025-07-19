@@ -5,6 +5,7 @@ import { Text, TextStyle } from '@/elements/typography/text';
 import Button from '@/elements/button/button';
 import Link from 'next/link';
 import ExampleTour from '@/assets/images/exampletour.jpeg';
+import { useTranslation } from 'react-i18next';
 
 type ServiceCardProps = {
   id?: number;
@@ -14,6 +15,7 @@ type ServiceCardProps = {
 };
 
 const ServiceCard = ({ title, description, imageUrl }: ServiceCardProps) => {
+  const { t } = useTranslation();
   return (
     <div className='overflow-hidden rounded-xl border-primary-50 border-2 shadow-md bg-white flex flex-col'>
       <div className='relative h-48 w-full'>
@@ -38,8 +40,11 @@ const ServiceCard = ({ title, description, imageUrl }: ServiceCardProps) => {
         />
         <div className='mt-auto pt-2'>
           <Link href={`/`}>
-            <Button className='w-full bg-primary-500 hover:bg-primary-600 text-white'>
-              View Details
+            <Button className='w-full bg-primary-500 hover:bg-primary-600 text-white '>
+              <Text
+                style={TextStyle.BodyLgSemiBold}
+                value={t('button.viewDetails')}
+              />
             </Button>
           </Link>
         </div>

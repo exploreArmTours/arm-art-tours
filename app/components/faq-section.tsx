@@ -8,8 +8,15 @@ import {
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
 import { Text, TextStyle } from '@/elements/typography/text';
 import { faqs } from '@/constants/data';
+import { useTranslation } from 'react-i18next';
+import { useFAQ } from '@/hooks/useFAQ';
 
 export default function FaqSection() {
+  const { i18n } = useTranslation();
+  // const { data: faqs=[],isLoading, isError } = useFAQ();
+
+  //  if (isLoading) return <div className='text-center'>Loading FAQs...</div>;
+  // if (isError) return <div className='text-center text-red-500'>Failed to load FAQs</div>;
   return (
     <div className='w-full px-6 md:px-24 lg:px-48'>
       <Text
@@ -26,6 +33,7 @@ export default function FaqSection() {
                   <Text
                     style={TextStyle.BodyLgSemiBold}
                     value={faq.question}
+                    // value={faq.translation[i18n.language].question || faq.translation['en'].question}
                     className='text-primary-700'
                   />
                   <ChevronUpIcon
@@ -47,6 +55,7 @@ export default function FaqSection() {
                     <Text
                       style={TextStyle.BodyMdNormal}
                       value={faq.answer}
+                      // value={faq.translation[i18n.language].answer || faq.translation['en'].answer}
                       className='text-primary-700'
                     />
                   </DisclosurePanel>
@@ -59,3 +68,48 @@ export default function FaqSection() {
     </div>
   );
 }
+
+// export const faqs = [
+//   {
+//     question: 'What is the best time to visit Armenia?',
+//     answer:
+//       'Spring and Autumn are the best seasons due to pleasant weather and beautiful natural scenery.',
+//   },
+//   {
+//     question: 'Are the tours guided?',
+//     answer:
+//       'Yes, all our tours include experienced local guides who speak multiple languages.',
+//   },
+//   {
+//     question: 'Can I customize my tour itinerary?',
+//     answer:
+//       'Absolutely! We offer fully customizable tour packages to suit your interests and schedule.',
+//   },
+//   {
+//     question: 'What is included in the tour package?',
+//     answer:
+//       'Most tours include transportation, accommodations, guided services, and entry fees to major attractions.',
+//   },
+// ];
+
+//json
+// [
+//   {
+//     "id": 1,
+//     "translations": {
+//       "en": {
+//         "question": "What is the best time to visit Armenia?",
+//         "answer": "Spring and Autumn are the best seasons..."
+//       },
+//       "hy": {
+//         "question": "Ո՞րն է Հայաստան այցելելու լավագույն ժամանակը:",
+//         "answer": "Գարունը և աշունը ամենահարմար եղանակներն են..."
+//       },
+//       "ru": {
+//         "question": "Когда лучше всего посетить Армению?",
+//         "answer": "Весна и осень — лучшие сезоны..."
+//       }
+//     }
+//   },
+//   ...
+// ]

@@ -1,6 +1,7 @@
-'use client';
 import Navbar from './navbar';
 import Footer from './footer';
+import '@/app/layouts/main-layout';
+import '../../public/i18n';
 // import Spinner from '@/app/reusable/spinner';
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {

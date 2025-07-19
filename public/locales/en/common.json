@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "tours": "Tours",
+    "about": "About Us",
+    "blogs": "Blogs"
+  },
+  "footer": {
+    "contacts": "Contact us"
+  },
+  "button": {
+    "next": "Next",
+    "previous": "Previous",
+    "readMore": "Read More",
+    "seeMore": "See More",
+    "viewDetails": "View Details"
+  },
+  "tour": {
+    "duration": "Duration",
+    "price": "Price per person",
+    "counterTitle": "Number of People",
+    "total": "Total Price",
+    "maximumBooking": "You can only book up to {{count}} people."
+  },
+  "tourCard": {
+    "price": "Price per person",
+    "duration": "Duration"
+  }
+}

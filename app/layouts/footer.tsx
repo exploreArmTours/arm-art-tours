@@ -8,17 +8,18 @@ import EmailSVG from '@/assets/icons/email.svg';
 import FacebookSVG from '@/assets/icons/facebook.svg';
 import TelegramSVG from '@/assets/icons/telegram.svg';
 import InstagramSVG from '@/assets/icons/instagram.svg';
-import WhatsAppSVG from '@/assets/icons/whatsapp.svg';
-import ViberSVG from '@/assets/icons/viber.svg';
+// import WhatsAppSVG from '@/assets/icons/whatsapp.svg';
+// import ViberSVG from '@/assets/icons/viber.svg';
 import Image from 'next/image';
 import ExampleTour from '@/assets/images/exampletour.jpeg';
+import { useTranslation } from 'react-i18next';
 
 //missing refs for Links
 const navigation = {
   services: [
-    { name: 'About Us', href: '/about' },
-    { name: 'Tours', href: '/our-tours' },
-    { name: 'Blogs', href: '/our-blogs' },
+    { name: 'nav.about', href: '/about' },
+    { name: 'nav.tours', href: '/our-tours' },
+    { name: 'nav.blogs', href: '/our-blogs' },
   ],
   contact: [
     {
@@ -43,6 +44,7 @@ const navigation = {
 };
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className='bg-primary-500 md:px-10 lg:px-24'>
       <div className='mx-auto max-w-7xl px-2 py-16 sm:py-10 lg:px-8'>
@@ -57,7 +59,11 @@ const Footer = () => {
           <div className='grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 text-white'>
             <div className='md:grid md:grid-cols-1 md:gap-8'>
               <div className='mt-10 md:mt-0'>
-                <Text style={TextStyle.BodyXlSemiBold} value='Contacts' />
+                <Text
+                  style={TextStyle.BodyXlNormal}
+                  value={t('footer.contacts')}
+                  className='underline'
+                />
                 <ul role='list' className='mt-6 space-y-4'>
                   {navigation.contact.map((item) => (
                     <li key={item.name} className='flex gap-3'>
@@ -65,7 +71,7 @@ const Footer = () => {
                       <Link href={item.href}>
                         <Text
                           style={TextStyle.BodyBaseNormal}
-                          value={item.name}
+                          value={t(item.name)}
                         />
                       </Link>
                     </li>
@@ -81,12 +87,12 @@ const Footer = () => {
                   <Link href='/#' target='_blank'>
                     <TelegramSVG />
                   </Link>
-                  <Link href='/#' target='_blank'>
+                  {/* <Link href='/#' target='_blank'>
                     <WhatsAppSVG />
                   </Link>
                   <Link href='/#' target='_blank'>
                     <ViberSVG />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -98,7 +104,8 @@ const Footer = () => {
                       <Link href={item.href}>
                         <Text
                           style={TextStyle.BodyBaseNormal}
-                          value={item.name}
+                          value={t(item.name)}
+                          className='underline'
                         />
                       </Link>
                     </li>

@@ -3,9 +3,11 @@ import { Text, TextStyle } from '@/elements/typography/text';
 import { useState } from 'react';
 import TextField from '@/elements/input/input';
 import Button from '@/elements/button/button';
+import { useTranslation } from 'react-i18next';
 
 const Counter = ({ price }: { price: string }) => {
   const [countOfPeople, setCountOfPeople] = useState(0);
+  const { t } = useTranslation();
 
   const decreaseCountOfPeople = () => {
     setCountOfPeople((prev) => prev - 1);
@@ -22,7 +24,7 @@ const Counter = ({ price }: { price: string }) => {
     <div className='flex flex-col gap-4'>
       <div className='w-full max-w-md bg-primary-50 rounded-xl shadow-md p-6 mt-4'>
         <Text
-          value='Number of People'
+          value={t('tour.counterTitle')}
           style={TextStyle.BodySmSemibold}
           className='text-primary-800 uppercase tracking-wide text-center mb-4'
         />
@@ -60,11 +62,11 @@ const Counter = ({ price }: { price: string }) => {
         </div>
 
         <div className='text-center text-lg font-semibold text-primary-700'>
-          Total: {totalPrice}
+          {t('tour.total')}: {totalPrice}
         </div>
       </div>
       <Text
-        value='You can only book up to 10 people'
+        value={t('tour.maximumBooking', { count: 10 })}
         style={TextStyle.BodySmNormal}
         className='text-primary-600'
       />

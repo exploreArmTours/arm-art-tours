@@ -2,9 +2,9 @@ import { NavigationItem } from '@/types/element-types/types';
 import ExampleTour from '@/assets/images/exampletour.jpeg';
 
 export const NAVIGATION: NavigationItem[] = [
-  { name: 'About us', href: '/about', current: false },
-  { name: 'Tours', href: '/our-tours', current: false },
-  { name: 'Blogs', href: '/our-blogs', current: false },
+  { name: 'nav.about', href: '/about', current: false },
+  { name: 'nav.tours', href: '/our-tours', current: false },
+  { name: 'nav.blogs', href: '/our-blogs', current: false },
 ];
 
 export const mockTours = [
@@ -13,7 +13,7 @@ export const mockTours = [
     slug: 'sevan-lake-sevanavank',
     title: 'Sevan Lake & Sevanavank',
     description:
-      'Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.',
+      'Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.vvScenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.',
     imageUrl: ExampleTour,
     time: 'full Day',
     price: '80000',
@@ -139,7 +139,7 @@ export const mockBlogs = [
     slug: 'sevan-lake-sevanavank',
     title: 'Sevan Lake & Sevanavank',
     description:
-      'Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.',
+      'Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.Scenic lake surrounded by mountains and the historic Sevanavank Monastery on a peninsula.',
     imageUrl: ExampleTour,
   },
   {

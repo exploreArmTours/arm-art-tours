@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "tours": "Տուրեր",
+    "about": "Մեր մասին",
+    "blogs": "Բլոգ"
+  },
+  "footer": {
+    "contacts": "Կապը մեզ հետ"
+  },
+  "button": {
+    "next": "Հաջորդ",
+    "previous": "Նախորդ",
+    "readMore": "Կարդալ ավելին",
+    "seeMore": "Տեսնել ավելին",
+    "viewDetails": "Դիտել մանրամասները"
+  },
+  "tour": {
+    "duration": "Տևողություն",
+    "price": "Արժեք",
+    "counterTitle": "Մասնակիցների քանակ",
+    "total": "Ընդամենը",
+    "maximumBooking": "Դուք կարող եք ամրագրել առավելագույնը {{count}} հոգու համար։"
+  },
+  "tourCard": {
+    "price": "Արժեք",
+    "duration": "Տևողություն"
+  }
+}

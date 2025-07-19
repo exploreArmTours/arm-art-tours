@@ -42,3 +42,49 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+// 'use client';
+// import Image from 'next/image';
+// import { Text, TextStyle } from '@/elements/typography/text';
+// import { useAbout } from '@/hooks/useAbout';
+// import ExampleTourImage from '@/assets/images/exampletour.jpeg';
+
+// const AboutUs = () => {
+//   const { data, isLoading, isError } = useAbout();
+
+//   if (isLoading) {
+//     return <Text value="Loading..." style={TextStyle.BodySmSemibold} className="text-center mt-20" />;
+//   }
+
+//   if (isError || !data?.translations) {
+//     return <Text value="Content not available." style={TextStyle.BodySmSemibold} className="text-center mt-20 text-primary-500" />;
+//   }
+
+//   const { title, paragraphs } = data.translations;
+//   const imageUrl = data.imageUrl || ExampleTourImage;
+
+//   return (
+//     <section className="bg-white px-6 py-16 md:px-20 lg:px-36">
+//       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+//         <div>
+//           <Image
+//             src={imageUrl}
+//             alt="Map of Armenia"
+//             className="rounded-2xl shadow-lg"
+//             width={600}
+//             height={400}
+//             priority
+//           />
+//         </div>
+//         <div className="text-primary-800 flex flex-col gap-4">
+//           <Text style={TextStyle.Header2} className="text-primary-500" value={title} />
+//           {paragraphs.map((p: string, idx: number) => (
+//             <Text key={idx} style={TextStyle.BodyBaseNormal} value={p} />
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default AboutUs;
